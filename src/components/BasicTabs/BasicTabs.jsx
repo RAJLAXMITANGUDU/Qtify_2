@@ -5,6 +5,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import styles from "./BasicTabs.module.css";
 
 //-----no need to show custom panels---------
 // function CustomTabPanel(props) {
@@ -54,7 +55,7 @@ export default function BasicTabs({ handleChangeIndex}) {
   return (
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" 
+        <Tabs scrollButtons="auto" variant="scrollable" allowScrollButtonsMobile value={value} onChange={handleChange} aria-label="basic tabs example" 
          TabIndicatorProps={{
             style: { backgroundColor: "#34c94b" }
         }} textColor='#34c94b' >

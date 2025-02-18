@@ -29,3 +29,8 @@ padding: 14px 20px;
     cursor: pointer;
     padding: 14px 20px;  /*top and bottom paddings are 14px + right and left paddings are 20px*/
 }
+@media(max-width:820px){
+  .search{
+    width :fit-content
+  }
+}
